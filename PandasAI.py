@@ -20,7 +20,7 @@ st.markdown(hide_style,unsafe_allow_html= True)
 
 #load API keys from .env file
 load_dotenv()
-st.title("PandasAI: Promot driven data analysis Tool. (Powered By OpenAI) ")
+st.title("PandasAI🐼: Prompt driven data analysis tool. (Powered By OpenAI) ")
 
 #create connection to OpenAI API
 API_KEY = os.environ['OPENAI_API_KEY']
@@ -59,3 +59,5 @@ if st.session_state["uploaded_file"] is not None:
                     st.write(answer)
         else:
             st.warning("Please enter a prompt")
+
+st.image("/Users/ziliangzhang/Desktop/Real_Project/PandasAI/pandasai.png", caption="Source:https://github.com/gventuri/pandas-ai")
